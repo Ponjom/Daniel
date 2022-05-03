@@ -13,7 +13,7 @@ class CreateOrdersTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->json('cart');
             $table->string('address');
-            $table->integer('phone');
+            $table->unsignedBigInteger('phone');
             $table->text('note')->nullable();
             $table->timestamps();
 
